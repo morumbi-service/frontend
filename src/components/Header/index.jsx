@@ -1,11 +1,28 @@
+import Image from 'next/image'
+
 import {
-  Container
+  Container,
+  Navigation,
+  NavigationItem,
+  NavigationButton,
+  Text
 } from './styles'
 
 function Header() {
   return (
     <Container>
-      <h1>Header</h1>
+      <Image
+        src='/mbLogo.svg'
+        width={30}
+        height={80}
+      />
+      <Navigation>
+        <NavigationItem>Sobre Nós</NavigationItem>
+        <NavigationItem>Serviços</NavigationItem>
+        <NavigationButton>
+          <Text>Fale Conosco</Text>
+        </NavigationButton>
+      </Navigation>
     </Container>
   )
 }

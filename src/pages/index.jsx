@@ -5,7 +5,6 @@ export default function Home() {
     <div>
       <main>
         <Header />
-        <h2>Prepare-se... Algo muito legal está chegando em breve!</h2>
       </main>
     </div>
   )
